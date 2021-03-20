@@ -28,7 +28,7 @@ ValidationContract.prototype.hasMaxLen = (value, max, message)=>{
     }
 
     ValidationContract.prototype.isEmail = (value, message)=>{
-        var reg = new RegExp(/^\w+([-.']\w+([-.]\w+)*@\w+)*\.\w+([-.]\+)*$/);
+        var reg = new RegExp(/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/);
         if(! reg.test(value))
         errors.push({message: message});
     }
