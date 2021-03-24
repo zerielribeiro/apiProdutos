@@ -32,11 +32,10 @@ const schema = mongosse.Schema({
             type: Number,
             requerid: true
         },
-        pruduct: {
+        product:{
             type: mongosse.Schema.Types.ObjectId,
             ref: 'Product'
-        }
-    }],
+    }}]
 
    
 

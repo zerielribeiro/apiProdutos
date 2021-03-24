@@ -32,8 +32,8 @@ const schema = mongosse.Schema({
     "tags": [{
         type: String,
         requerid: true
-    }]
-
+    }],
+   
 });
 
 module.exports = mongosse.model('Product', schema);
